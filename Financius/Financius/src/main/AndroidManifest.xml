@@ -3,7 +3,7 @@
     package="com.code44.finance">
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="10"
         android:targetSdkVersion="18" />
 
     <!-- Permissions -->
