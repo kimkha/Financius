@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat
 
 buildscript {
     repositories { mavenCentral() }
-    dependencies { classpath 'com.android.tools.build:gradle:0.8.+' }
+    dependencies { classpath 'com.android.tools.build:gradle:0.12.+' }
 }
 
 apply plugin: 'android'
@@ -13,12 +13,12 @@ repositories {
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    compileSdkVersion 20
+    buildToolsVersion "20"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 20
         versionCode 46
         versionName "0.9.14"
     }
@@ -43,7 +43,7 @@ android {
 
     buildTypes {
         debug {
-            packageNameSuffix ".debug"
+            applicationIdSuffix ".debug"
             versionNameSuffix " debug " + getBuildName()
         }
 
